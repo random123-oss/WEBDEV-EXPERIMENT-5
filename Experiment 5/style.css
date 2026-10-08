@@ -1,0 +1,38 @@
+
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+
+.sky-clear  { background: linear-gradient(160deg, #1d4e89, #4aa3c7); }
+.sky-cloudy { background: linear-gradient(160deg, #56657a, #a7b4c2); }
+.sky-rain   { background: linear-gradient(160deg, #1f2a3c, #4b6584); }
+.sky-snow   { background: linear-gradient(160deg, #7f9bb8, #dbe7f3); }
+.sky-storm  { background: linear-gradient(160deg, #1b1330, #4a3f6b); }
+.sky-night  { background: linear-gradient(160deg, #0b1026, #2b3a67); }
+
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.92);
+}
+
+
+.icon {
+  font-size: 4.5rem;
+}
+
+
+.result {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .result { animation: none; }
+}
